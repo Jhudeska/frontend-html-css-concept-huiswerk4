@@ -33,6 +33,11 @@ article img {
 .header {
     background-color: #542ED5;
 }
+/* --------------- 4.1 Footer ------------------------- */
+.footer {
+    background-color: #000000;
+    color: #fff;
+}
 /* --------------- 4.2 Introduction ------------------- */
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
