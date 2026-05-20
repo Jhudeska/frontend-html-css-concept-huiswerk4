@@ -35,6 +35,7 @@ ul {
     --secondary: #EE4284;
     --white: #ffffff;
     --black: #000000;
+    --gray: #504f4f;
 }
 /* --------------- 3.1 Reusables ----------------------- */
 .outer-container {
@@ -116,7 +117,6 @@ a:link {
     flex-direction: row;
     justify-content: flex-end;
     padding: 0 20px;
-    border: 2px solid deeppink;
 }
  .header-menubar li {
      padding: 10px 20px;
@@ -138,6 +138,7 @@ a:link {
 .section-business {
     color: var(--primary);
     font-size: 30px;
+    padding: 30px 0;
 }
 .section-business .business-text {
     color: var(--black);
@@ -147,13 +148,16 @@ a:link {
 }
 
 .section-worth {
+    padding: 50px 0;
     background-color: var(--primary-light);
 }
 
 .section-variety {
+    padding: 50px 0;
     background-color: var(--primary-light);
 }
 .section-rolling-stone {
+    padding: 50px 0;
     background-color: var(--primary-light);
 }
 
@@ -163,7 +167,7 @@ a:link {
     text-align: center;
 }
 .section-contact form {
-    width: 300px;
+    width: 350px;
 }
 
 /*.section-grid article {*/
@@ -174,16 +178,24 @@ a:link {
 /*    flex-basis:100px ;*/
 /*    border: 2px solid crimson;*/
 /*}*/
+.section-grid {
+    padding: 50px 0;
+}
 .section-grid .ups-article {
     text-align: center;
-    width: 250px;
+    width: 350px;
+    border: 3px solid var(--primary);
     /*flex-basis: 250px;*/
-    border: 2px dashed orangered;
+    /*border: 2px dashed orangered;*/
     /*border: 2px dashed red;*/
     /*flex-wrap: wrap;*/
 }
-.ups-article p {
+.ups-article h3 {
     color: var(--primary);
+}
+
+.ups-article p {
+    color: var(--gray);
 }
 
 .ups-article img {
