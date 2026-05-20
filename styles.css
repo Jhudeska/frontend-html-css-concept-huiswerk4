@@ -13,31 +13,192 @@
 ////////////////////////*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 article img {
     width: 20%;
 }
+
+ul {
+    list-style: none;
+}
 /* ------------------------------- 2. Typography ----------------------------------- */
 
 /* ------------------------------- 3. Layout --------------------------------------- */
-
+:root {
+    --primary: #542ED5;
+    --primary-light: #F3F6F9;
+    --secondary: #EE4284;
+    --white: #ffffff;
+    --black: #000000;
+}
 /* --------------- 3.1 Reusables ----------------------- */
+.outer-container {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    /*border: 2px solid greenyellow;*/
+}
 
+.inner-container {
+    flex-basis: 1200px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    /*border: 2px dashed orange;*/
+}
+.inner-container__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.inner-container__grid{
+    flex-basis: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: space-evenly;*/
+    /*align-items: center;*/
+    margin: 0 20px;
+    /*padding: 100px 0;*/
+}
+.article-wrapper {
+    width: 200px;
+    border: 2px solid deeppink;
+}
+
+.btn {
+
+    padding: 20px;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.btn:hover {
+
+}
+
+.btn-pink {
+    background-color: var(--secondary);
+}
 /* --------------- 3.2 Other --------------------------- */
+a,
+a:visited,
+a:link {
+    text-decoration: none;
+    color: var(--white);
+}
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
 .header {
     background-color: #542ED5;
+    text-align: center;
+    color: var(--white);
 }
+
+.header nav {
+
+}
+
+.header-menubar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 20px;
+    border: 2px solid deeppink;
+}
+ .header-menubar li {
+     padding: 10px 20px;
+ }
+
+ .header-title {
+     display: flex;
+     flex-direction: row;
+     width: 450px;
+     padding: 50px 0 20px 0;
+ }
+ .header p {
+     padding-bottom: 30px;
+ }
+ .header img {
+     padding-top: 88px;
+ }
+
+.section-business {
+    color: var(--primary);
+    font-size: 30px;
+}
+.section-business .business-text {
+    color: var(--black);
+}
+.section-business a {
+    color: var(--primary);
+}
+
+.section-worth {
+    background-color: var(--primary-light);
+}
+
+.section-variety {
+    background-color: var(--primary-light);
+}
+.section-rolling-stone {
+    background-color: var(--primary-light);
+}
+
+.section-contact {
+    color: var(--white);
+    background-color: var(--primary);
+    text-align: center;
+}
+.section-contact form {
+    width: 300px;
+}
+
+/*.section-grid article {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    flex-wrap: wrap;*/
+/*    width: 250px;*/
+/*    flex-basis:100px ;*/
+/*    border: 2px solid crimson;*/
+/*}*/
+.section-grid .ups-article {
+    text-align: center;
+    width: 250px;
+    /*flex-basis: 250px;*/
+    border: 2px dashed orangered;
+    /*border: 2px dashed red;*/
+    /*flex-wrap: wrap;*/
+}
+.ups-article p {
+    color: var(--primary);
+}
+
+.ups-article img {
+    max-width: 50px;
+    margin: 16px 0 ;
+}
+
 /* --------------- 4.1 Footer ------------------------- */
 .footer {
-    background-color: #000000;
-    color: #fff;
+    text-align: center;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 20px;
 }
+
 /* --------------- 4.2 Introduction ------------------- */
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
