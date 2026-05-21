@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -6,38 +8,59 @@
         3.1 Reusables
         3.2 Other
     4. Areas
-        4.1 Header
-        4.2 Introduction
-        etc.
+        4.1 Navigation
+        4.2 Header
+        4.3 Business
+        4.4 Rolling Stone
+        4.5 Variety
+        4.6 Worth
+        4.7 Services
+        4.8 Contact
+        4.9 Footer
     5. Media Queries
 ////////////////////////*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
+body {
+    font-family: Roboto, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-article img {
-    width: 20%;
-}
-
 ul {
     list-style: none;
 }
+
+
 /* ------------------------------- 2. Typography ----------------------------------- */
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: Merriweather, serif;
+    font-weight: 700;
+}
+
+button, input {
+    font-family: inherit;
+}
+
 /* ------------------------------- 3. Layout --------------------------------------- */
+
 :root {
-    --primary: #542ED5;
-    --primary-light: #F3F6F9;
-    --secondary: #EE4284;
+    --primary: #5722CD;
+    --primary-light: #F2F0FF;
+    --secondary: #ED4385;
     --white: #ffffff;
-    --black: #000000;
+    --black: #0C0C0C;
+    --blue: #4B49E8;
     --gray: #504f4f;
 }
+
 /* --------------- 3.1 Reusables ----------------------- */
+
 .outer-container {
     display:flex;
     flex-direction:row;
@@ -54,44 +77,13 @@ ul {
     margin: 0 20px;
     /*border: 2px dashed orange;*/
 }
-.inner-container__row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.inner-container__grid{
-    flex-basis: 1200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /*justify-content: space-evenly;*/
-    /*align-items: center;*/
-    margin: 0 20px;
-    /*padding: 100px 0;*/
-}
+
 .article-wrapper {
     width: 200px;
     border: 2px solid deeppink;
 }
-
-.btn {
-
-    padding: 20px;
-    border: none;
-    color: white;
-    border-radius: 30px;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-.btn:hover {
-
-}
-
-.btn-pink {
-    background-color: var(--secondary);
-}
 /* --------------- 3.2 Other --------------------------- */
+
 a,
 a:visited,
 a:link {
@@ -99,78 +91,139 @@ a:link {
     color: var(--white);
 }
 
-/* ------------------------------- 4. Areas ---------------------------------------- */
+.btn {
+    padding: 20px;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+}
 
-/* --------------- 4.1 Header ------------------------- */
+.btn:hover {
+    background-color: white;
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+}
+
+.btn-pink {
+    background-color: var(--secondary);
+}
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+/* --------------- 4.1 Navigation ------------------------- */
+
+.section-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #542ED5;
+}
+.navigation-nav {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    width: 600px;
+    padding: 40px 20px;
+}
+
+/* --------------- 4.2 Header ------------------------- */
+
 .header {
     background-color: #542ED5;
     text-align: center;
     color: var(--white);
 }
 
-.header nav {
-
-}
-
-.header-menubar {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 0 20px;
-}
- .header-menubar li {
-     padding: 10px 20px;
- }
-
  .header-title {
      display: flex;
      flex-direction: row;
-     width: 450px;
+     width: 800px;
      padding: 50px 0 20px 0;
+     font-size: 50px ;
+     font-weight: 900;
  }
  .header p {
-     padding-bottom: 30px;
+     padding: 30px;
+     font-weight: 200;
+     font-size: 25px;
  }
+
  .header img {
      padding-top: 88px;
  }
 
+/* --------------- 4.3 Business ------------------------- */
+
 .section-business {
     color: var(--primary);
     font-size: 30px;
-    padding: 30px 0;
+    padding-top: 50px;
+}
+.section-business p {
+    font-family: Merriweather, serif;
+    font-weight: 500;
+    line-height: 1.6;
+    /*padding-bottom: 20px;*/
 }
 .section-business .business-text {
     color: var(--black);
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 80px;
 }
 .section-business a {
     color: var(--primary);
 }
 
-.section-worth {
-    padding: 50px 0;
-    background-color: var(--primary-light);
-}
+/* --------------- 4.4 Rolling Stone ------------------------- */
 
-.section-variety {
-    padding: 50px 0;
-    background-color: var(--primary-light);
-}
 .section-rolling-stone {
     padding: 50px 0;
     background-color: var(--primary-light);
 }
 
-.section-contact {
-    color: var(--white);
-    background-color: var(--primary);
-    text-align: center;
-}
-.section-contact form {
-    width: 350px;
+.section-rolling-stone img {
+    box-shadow: 5px 12px 20px rgba(0, 0, 0, 0.35);
 }
 
-/*.section-grid article {*/
+/* --------------- 4.5 Variety ------------------------------ */
+
+.section-variety {
+    padding: 50px 0;
+    background-color: var(--primary-light);
+}
+
+.section-variety img {
+    box-shadow: 5px 12px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* --------------- 4.6 Worth  -------------------------- */
+
+.section-worth {
+    padding: 50px 0;
+    background-color: var(--primary-light);
+}
+.section-worth img {
+    box-shadow: 5px 12px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* --------------- TODO: Clean up  -------------------------- */
+.inner-container__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* --------------- 4.7 Services ------------------------- */
+
+/*.section- article {*/
 /*    display: flex;*/
 /*    flex-direction: row;*/
 /*    flex-wrap: wrap;*/
@@ -178,18 +231,22 @@ a:link {
 /*    flex-basis:100px ;*/
 /*    border: 2px solid crimson;*/
 /*}*/
-.section-grid {
+
+.section-services {
     padding: 50px 0;
 }
-.section-grid .ups-article {
+
+.section-services .ups-article {
     text-align: center;
     width: 350px;
     border: 3px solid var(--primary);
+    padding: 30px;
     /*flex-basis: 250px;*/
     /*border: 2px dashed orangered;*/
     /*border: 2px dashed red;*/
     /*flex-wrap: wrap;*/
 }
+
 .ups-article h3 {
     color: var(--primary);
 }
@@ -203,14 +260,40 @@ a:link {
     margin: 16px 0 ;
 }
 
-/* --------------- 4.1 Footer ------------------------- */
+.inner-container__services{
+    flex-basis: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: space-evenly;*/
+    /*align-items: center;*/
+    margin: 0 20px;
+    /*padding: 100px 0;*/
+}
+/* --------------- 4.8 Contact ------------------------- */
+
+.section-contact {
+    color: var(--white);
+    background-color: var(--primary);
+    text-align: center;
+    padding: 50px 0;
+    min-height: 60vh;
+}
+
+.section-contact form {
+    width: 350px;
+}
+
+
+/* --------------- 4.9 Footer ------------------------- */
+
 .footer {
     text-align: center;
     background-color: var(--black);
     color: var(--white);
-    padding: 20px;
+    padding-top: 26px;
+    padding-bottom: 20px;
 }
 
-/* --------------- 4.2 Introduction ------------------- */
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
