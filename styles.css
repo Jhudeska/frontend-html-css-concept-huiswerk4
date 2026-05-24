@@ -206,6 +206,13 @@ a:link {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+.section-services .content-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 auto;
+}
+
 .article-item h3 {
     color: var(--primary);
 }
@@ -272,6 +279,7 @@ a:link {
 }
 
 /* --------------- 4.6 Footer ------------------------- */
+
 .footer {
     text-align: center;
     background-color: var(--black);
