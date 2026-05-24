@@ -112,7 +112,7 @@ a:link {
     flex-direction: column;
     justify-content: flex-end;
     flex-basis: auto;
-    background-color: #542ED5;
+    background: linear-gradient(to right, var(--blue), var(--primary));
     color: var(--white);
     text-align: center;
 }
@@ -173,35 +173,24 @@ a:link {
 /* Tablet range 768px - 1200px */
 @media screen and (min-width: 768px) and (max-width: 1200px ) {
 
-
+    .btn {
+        margin-top: 20px;
+    }
 }
 
 
 /* Desktop 1200px */
 @media screen and (min-width: 1200px) {
 
+    .btn {
+        margin-top: 40px;
+    }
+
     .navigation-nav {
         justify-content: flex-end;
         font-weight: 300;
     }
 
-
-    /*.header-title {*/
-    /*    display: flex;*/
-    /*    flex-direction: row;*/
-    /*    width: 800px;*/
-    /*    padding: 50px 0 20px 0;*/
-    /*    font-size: 50px ;*/
-    /*    font-weight: 900;*/
-    /*}*/
-    /*.header p {*/
-    /*    padding: 30px;*/
-    /*    font-weight: 200;*/
-    /*    font-size: 25px;*/
-    /*}*/
-    /*.header img {*/
-    /*    padding-top: 88px;*/
-    /*}*/
 
 
 }
