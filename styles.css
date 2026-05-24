@@ -231,6 +231,37 @@ a:link {
 }
 /* --------------- 4.5 Contact ------------------------- */
 
+.section-contact {
+    display: flex;
+    color: var(--white);
+    background: linear-gradient(to right bottom, var(--blue), var(--primary));
+    text-align: center;
+    padding: 50px 0;
+    /*min-height: 40vh;*/
+}
+
+.contact-content {
+    width:500px;;
+}
+
+.contact-content  label{
+    text-align: left;
+    padding-top: 20px;
+}
+
+.contact-content  form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-content form input,
+.contact-content form textarea {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
 /* --------------- 4.6 Footer ------------------------- */
 .footer {
     text-align: center;
