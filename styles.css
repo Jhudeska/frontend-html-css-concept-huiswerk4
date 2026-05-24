@@ -141,7 +141,45 @@ a:link {
 /* Desktop 1200px */
 @media  screen and (min-width: 1200px)  {
 
+    .section-navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: #542ED5;
+    }
+    .navigation-nav {
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+        width: 600px;
+        padding: 40px 20px;
+    }
 
+    /* --------------- 4.2 Header ------------------------- */
+
+    .header {
+        background-color: #542ED5;
+        text-align: center;
+        color: var(--white);
+    }
+
+    .header-title {
+        display: flex;
+        flex-direction: row;
+        width: 800px;
+        padding: 50px 0 20px 0;
+        font-size: 50px ;
+        font-weight: 900;
+    }
+    .header p {
+        padding: 30px;
+        font-weight: 200;
+        font-size: 25px;
+    }
+
+    .header img {
+        padding-top: 88px;
+    }
 
 
 }
