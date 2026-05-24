@@ -21,6 +21,7 @@
 /* ------------------------------- 1. Global Styles -------------------------------- */
 body {
     font-family: Roboto, sans-serif;
+    position: relative;
 }
 
 * {
@@ -93,6 +94,7 @@ a:link {
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 400;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .btn:hover {
@@ -139,7 +141,7 @@ a:link {
 }
 
 .inner-container__header {
-    flex-basis: 430px;
+    flex-basis: 440px;
     margin: 0 20px;
     border: 2px dashed orange;
 }
