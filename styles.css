@@ -248,7 +248,13 @@ a:link {
     text-align: left;
     padding-top: 20px;
 }
+.contact-content  h2{
+    font-size: 35px;
+}
 
+.contact-content  p{
+    padding: 30px 0;
+}
 .contact-content  form{
     display: flex;
     flex-direction: column;
@@ -260,6 +266,9 @@ a:link {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 3px;
+}
+.contact-content form button {
+    margin-top: 10px
 }
 
 /* --------------- 4.6 Footer ------------------------- */
