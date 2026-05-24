@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -8,15 +9,12 @@
         3.1 Reusables
         3.2 Other
     4. Areas
-        4.1 Navigation
-        4.2 Header
-        4.3 Business
-        4.4 Rolling Stone
-        4.5 Variety
-        4.6 Worth
-        4.7 Services
-        4.8 Contact
-        4.9 Footer
+        4.1 Header
+        4.2 Business
+        4.3 Projects
+        4.4 Services
+        4.5 Contact
+        4.6 Footer
     5. Media Queries
 ////////////////////////*/
 
@@ -62,9 +60,9 @@ button, input {
 /* --------------- 3.1 Reusables ----------------------- */
 
 .outer-container {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     border: 2px solid greenyellow;
 }
 
@@ -108,78 +106,102 @@ a:link {
 }
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
-/* --------------- 4.1 Navigation ------------------------- */
+/* --------------- 4.1 Header ------------------------- */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-basis: auto;
+    background-color: #542ED5;
+    color: var(--white);
+    text-align: center;
+}
+
+.navigation-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+    width: 100%;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.header-title {
+    padding: 50px 20px 20px 20px;
+    font-weight: 900;
+}
+
+.header p {
+    padding: 30px;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.inner-container__header {
+    flex-basis: 430px;
+    margin: 0 20px;
+    border: 2px dashed orange;
+}
+
+.inner-container__header-navigation {
+    margin: 0 20px;
+    border: 2px dashed orange;
+}
+.header .header-squiggle::before  {
+    content: url("assets/squiggle_line_stripe.svg");
+    position: absolute;
+    left: calc(50% - 35px);
+    top: 430px;
+}
+
+/* --------------- 4.2 Business ------------------------- */
 
 
-/* --------------- 4.3 Business ------------------------- */
+/* --------------- 4.3 Projects ------------------------- */
 
 
-/* --------------- 4.5 Variety ------------------------------ */
+/* --------------- 4.4 Services ------------------------- */
 
+/* --------------- 4.5 Contact ------------------------- */
 
-
-/* --------------- 4.6 Services ------------------------- */
-
-
-/* --------------- 4.7 Contact ------------------------- */
-
-
-
-/* --------------- 4.8 Footer ------------------------- */
-
+/* --------------- 4.6 Footer ------------------------- */
 
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
 
 /* Tablet range 768px - 1200px */
-@media  screen and (min-width: 768px) and (max-width: 1200px ) {
+@media screen and (min-width: 768px) and (max-width: 1200px ) {
 
 
 }
 
 
 /* Desktop 1200px */
-@media  screen and (min-width: 1200px)  {
+@media screen and (min-width: 1200px) {
 
-    .section-navigation {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        background-color: #542ED5;
-    }
     .navigation-nav {
-        display: flex;
-        flex-direction: row;
-        column-gap: 30px;
-        width: 600px;
-        padding: 40px 20px;
+        justify-content: flex-end;
+        font-weight: 300;
     }
 
-    /* --------------- 4.2 Header ------------------------- */
 
-    .header {
-        background-color: #542ED5;
-        text-align: center;
-        color: var(--white);
-    }
-
-    .header-title {
-        display: flex;
-        flex-direction: row;
-        width: 800px;
-        padding: 50px 0 20px 0;
-        font-size: 50px ;
-        font-weight: 900;
-    }
-    .header p {
-        padding: 30px;
-        font-weight: 200;
-        font-size: 25px;
-    }
-
-    .header img {
-        padding-top: 88px;
-    }
+    /*.header-title {*/
+    /*    display: flex;*/
+    /*    flex-direction: row;*/
+    /*    width: 800px;*/
+    /*    padding: 50px 0 20px 0;*/
+    /*    font-size: 50px ;*/
+    /*    font-weight: 900;*/
+    /*}*/
+    /*.header p {*/
+    /*    padding: 30px;*/
+    /*    font-weight: 200;*/
+    /*    font-size: 25px;*/
+    /*}*/
+    /*.header img {*/
+    /*    padding-top: 88px;*/
+    /*}*/
 
 
 }
