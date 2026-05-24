@@ -104,6 +104,7 @@ a:link {
     background-color: white;
     border: 2px solid var(--secondary);
     color: var(--secondary);
+    font-weight: 400;
 }
 
 .btn-pink {
@@ -118,7 +119,7 @@ a:link {
     flex-direction: column;
     justify-content: flex-end;
     flex-basis: auto;
-    background: linear-gradient(to right, var(--blue), var(--primary));
+    background: linear-gradient(to right bottom, var(--blue), var(--primary));
     color: var(--white);
     text-align: center;
 }
@@ -165,7 +166,7 @@ a:link {
 
 /* --------------- 4.2 Business ------------------------- */
 .section-business {
-    padding: 50px 0;
+    padding: 80px 0;
     color: var(--primary);
     text-align: center;
     font-size: 30px;
@@ -193,7 +194,41 @@ a:link {
 
 
 /* --------------- 4.4 Services ------------------------- */
+.section-services {
+    padding: 50px 0;
+}
 
+.section-services .article-item {
+    text-align: left;
+    width: 350px;
+    border: 2px solid var(--primary);
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.article-item h3 {
+    color: var(--primary);
+}
+
+.article-item p {
+    color: var(--gray);
+}
+
+.article-item img {
+    max-width: 50px;
+    margin: 16px 0 ;
+}
+
+.inner-container__services{
+    flex-basis: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 10px 0 40px;
+    border: 2px dashed orange;
+    gap: 30px;
+}
 /* --------------- 4.5 Contact ------------------------- */
 
 /* --------------- 4.6 Footer ------------------------- */
