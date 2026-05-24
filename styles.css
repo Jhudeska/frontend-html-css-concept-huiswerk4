@@ -197,12 +197,12 @@ a:link {
 
 .section-projects {
     background-color: var(--primary-light);
-    padding: 80px 0;
+    padding-bottom: 80px ;
 }
 
 .inner-container__projects{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /*flex-basis: 200px;*/
     justify-content: center;
     align-items: center;
@@ -213,7 +213,25 @@ a:link {
     box-shadow: 0 14px 15px rgba(0, 0, 0, 0.35);
 
 }
+.section-projects .content-projects {
+    width: 400px;
+    padding: 80px 40px;
+}
 
+.content-projects h4 {
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.content-projects h2 {
+    font-size: 35px;
+    padding-bottom: 25px;
+}
+
+.content-projects p {
+    padding: 25px 0;
+}
 .section-projects .content-projects img {
     width: 30%;
 }
@@ -224,10 +242,7 @@ a:link {
     /*padding: 70px 0;*/
 }
 
-.section-projects .box-variety {
-    display: flex;
-    flex-direction: column-reverse;
-}
+
 
 
 /* --------------- 4.4 Services ------------------------- */
