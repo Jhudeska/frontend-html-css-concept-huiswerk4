@@ -280,8 +280,8 @@ a:link {
     min-height: 60vh;
 }
 
-.section-contact form {
-    width: 350px;
+ form {
+    width: 100%;
 }
 
 
