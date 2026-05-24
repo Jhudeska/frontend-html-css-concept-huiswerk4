@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -65,7 +65,7 @@ button, input {
     display:flex;
     flex-direction:row;
     justify-content:center;
-    /*border: 2px solid greenyellow;*/
+    border: 2px solid greenyellow;
 }
 
 .inner-container {
@@ -75,13 +75,9 @@ button, input {
     flex-direction: column;
     align-items: center;
     margin: 0 20px;
-    /*border: 2px dashed orange;*/
+    border: 2px dashed orange;
 }
 
-.article-wrapper {
-    width: 200px;
-    border: 2px solid deeppink;
-}
 /* --------------- 3.2 Other --------------------------- */
 
 a,
@@ -114,186 +110,38 @@ a:link {
 /* ------------------------------- 4. Areas ---------------------------------------- */
 /* --------------- 4.1 Navigation ------------------------- */
 
-.section-navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    background-color: #542ED5;
-}
-.navigation-nav {
-    display: flex;
-    flex-direction: row;
-    column-gap: 30px;
-    width: 600px;
-    padding: 40px 20px;
-}
-
-/* --------------- 4.2 Header ------------------------- */
-
-.header {
-    background-color: #542ED5;
-    text-align: center;
-    color: var(--white);
-}
-
- .header-title {
-     display: flex;
-     flex-direction: row;
-     width: 800px;
-     padding: 50px 0 20px 0;
-     font-size: 50px ;
-     font-weight: 900;
- }
- .header p {
-     padding: 30px;
-     font-weight: 200;
-     font-size: 25px;
- }
-
- .header img {
-     padding-top: 88px;
- }
 
 /* --------------- 4.3 Business ------------------------- */
 
-.section-business {
-    color: var(--primary);
-    font-size: 30px;
-    padding-top: 50px;
-}
-.section-business p {
-    font-family: Merriweather, serif;
-    font-weight: 500;
-    line-height: 1.6;
-    /*padding-bottom: 20px;*/
-}
-.section-business .business-text {
-    color: var(--black);
-    font-size: 16px;
-    padding-top: 40px;
-    padding-bottom: 80px;
-}
-.section-business a {
-    color: var(--primary);
-}
-
-/* --------------- 4.4 Rolling Stone ------------------------- */
-
-.section-rolling-stone {
-    padding: 50px 0;
-    background-color: var(--primary-light);
-}
-
-.section-rolling-stone img {
-    box-shadow: 5px 12px 20px rgba(0, 0, 0, 0.35);
-}
 
 /* --------------- 4.5 Variety ------------------------------ */
 
-.section-variety {
-    padding: 50px 0;
-    background-color: var(--primary-light);
-}
 
-.section-variety img {
-    box-shadow: 5px 12px 20px rgba(0, 0, 0, 0.35);
-}
 
-/* --------------- 4.6 Worth  -------------------------- */
+/* --------------- 4.6 Services ------------------------- */
 
-.section-worth {
-    padding: 50px 0;
-    background-color: var(--primary-light);
-}
-.section-worth img {
-    box-shadow: 5px 12px 20px rgba(0, 0, 0, 0.35);
-}
 
-/* --------------- TODO: Clean up  -------------------------- */
-.inner-container__row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+/* --------------- 4.7 Contact ------------------------- */
 
 
 
+/* --------------- 4.8 Footer ------------------------- */
 
-
-/* --------------- 4.7 Services ------------------------- */
-
-/*.section- article {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    flex-wrap: wrap;*/
-/*    width: 250px;*/
-/*    flex-basis:100px ;*/
-/*    border: 2px solid crimson;*/
-/*}*/
-
-.section-services {
-    padding: 50px 0;
-}
-
-.section-services .ups-article {
-    text-align: center;
-    width: 350px;
-    border: 3px solid var(--primary);
-    padding: 30px;
-    /*flex-basis: 250px;*/
-    /*border: 2px dashed orangered;*/
-    /*border: 2px dashed red;*/
-    /*flex-wrap: wrap;*/
-}
-
-.ups-article h3 {
-    color: var(--primary);
-}
-
-.ups-article p {
-    color: var(--gray);
-}
-
-.ups-article img {
-    max-width: 50px;
-    margin: 16px 0 ;
-}
-
-.inner-container__services{
-    flex-basis: 1200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /*justify-content: space-evenly;*/
-    /*align-items: center;*/
-    margin: 0 20px;
-    /*padding: 100px 0;*/
-}
-/* --------------- 4.8 Contact ------------------------- */
-
-.section-contact {
-    color: var(--white);
-    background-color: var(--primary);
-    text-align: center;
-    padding: 50px 0;
-    min-height: 60vh;
-}
-
- form {
-    width: 100%;
-}
-
-
-/* --------------- 4.9 Footer ------------------------- */
-
-.footer {
-    text-align: center;
-    background-color: var(--black);
-    color: var(--white);
-    padding-top: 26px;
-    padding-bottom: 20px;
-}
 
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+/* Tablet range 768px - 1200px */
+@media  screen and (min-width: 768px) and (max-width: 1200px ) {
+
+
+}
+
+
+/* Desktop 1200px */
+@media  screen and (min-width: 1200px)  {
+
+
+
+
+}
